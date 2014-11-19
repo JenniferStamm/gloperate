@@ -11,4 +11,8 @@ class EXTENDED_PAINTERS_API CubeScapeExtended : public CubeScape, public reflect
 public:
 	CubeScapeExtended(gloperate::ResourceManager & resourceManager);
 	virtual ~CubeScapeExtended();
+  std::string texture() const;
+  void setTexture(const std::string & texture);
+protected:
+  std::string m_texture;
 };
